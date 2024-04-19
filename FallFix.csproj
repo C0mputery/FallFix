@@ -8,8 +8,10 @@
     <!-- Set Mod Version with MinVer -->
     <Target Name="SetModVersion" BeforeTargets="AddGeneratedFile" DependsOnTargets="MinVer">
         <PropertyGroup>
-            <PlainVersion>$(MinVerMajor).$(MinVerMinor).$(MinVerPatch)</PlainVersion>
-            <BepInExPluginVersion>$(PlainVersion)</BepInExPluginVersion>
+            <!-- <PlainVersion>$(MinVerMajor).$(MinVerMinor).$(MinVerPatch)</PlainVersion>  -->
+            <!-- <BepInExPluginVersion>$(PlainVersion)</BepInExPluginVersion> -->
+          <PlainVersion>1.0.0</PlainVersion>
+          <BepInExPluginVersion>1.0.0</BepInExPluginVersion>
         </PropertyGroup>
     </Target>
 
